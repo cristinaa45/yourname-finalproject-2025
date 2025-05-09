@@ -1,36 +1,92 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Final Project</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h2>How did it started?</h2>
-    </header>
-<header>
-    <h2>Ecuadorians Designers</h2>
-    <table>
-      <tr>
-        <td>Name</td>
-        <td>Name2</td>
-        <td>Name3</td>
-        img
-      </tr>
-    </table>
-    img 
-    <header>
-    <h2>Traditional Clothes</h2>
-    </header>
-    <table>
-      <tr>
-        (list)(button for the explanation)
-        <td>Name of the piece</td>
-        <td>Name od the piece</td>
-        <td>Name of the piece</td>  
-      </tr>
-    </table>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ecuadorian Fashion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Ecuadorian Fashion</h1>
+    <nav>
+      <ul>
+        <li><a href="#start">How It Started</a></li>
+        <li><a href="#designers">Famous Designers</a></li>
+        <li><a href="#traditional">Traditional Clothing</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section 1: How Did It Start -->
+  <section id="start">
+    <h2>How Did It Start?</h2>
+    <img src="images/history.jpg" alt="Traditional Ecuadorian Textile" />
+    <p>
+      Fashion is a reflection of who we are, our culture, and identity. Ecuador is home to diverse indigenous groups, each with unique costumes and traditions. They use local materials and natural dyes to create textiles that reflect their environment and culture. Tagua, or "vegetable ivory," is a notable material. The Spanish colonial period introduced European styles, leading to a fusion of traditions in the mestizo population.
+    </p>
+  </section>
+
+  <!-- Section 2: Famous Designers -->
+  <section id="designers">
+    <h2>Famous Designers</h2>
+    <div class="designer">
+      <img src="images/olga-fisch.jpg" alt="Olga Fisch" />
+      <p><strong>Olga Fisch:</strong> Celebrated for blending indigenous motifs with modern art and fashion.</p>
+    </div>
+    <div class="designer">
+      <img src="images/galo-sanchez.jpg" alt="Galo Sanchez" />
+      <p><strong>Galo Sánchez:</strong> Known for contemporary designs using Andean textiles.</p>
+    </div>
+    <div class="designer">
+      <img src="images/paulina-anda.jpg" alt="Paulina Anda" />
+      <p><strong>Paulina Anda:</strong> A leading footwear designer promoting Ecuadorian craftsmanship.</p>
+    </div>
+  </section>
+
+  <!-- Section 3: Traditional Clothing -->
+  <section id="traditional">
+    <h2>Traditional Clothing</h2>
+    <div class="clothing-item">
+      <img src="images/poncho.jpg" alt="Poncho" />
+      <button onclick="showInfo('poncho')">Poncho Info</button>
+    </div>
+    <div class="clothing-item">
+      <img src="images/manta.jpg" alt="Manta" />
+      <button onclick="showInfo('manta')">Manta Info</button>
+    </div>
+    <div class="clothing-item">
+      <img src="images/tagua.jpg" alt="Tagua" />
+      <button onclick="showInfo('tagua')">Tagua Info</button>
+    </div>
+    <div id="info-box"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ecuadorian Fashion | Contact us on social media</p>
+  </footer>
+
+  <script>
+    function showInfo(item) {
+      const infoBox = document.getElementById("info-box");
+      let content = "";
+      switch(item) {
+        case "poncho":
+          content = "<strong>Poncho:</strong> A warm wool garment with a central hole for the head, made from handwoven Andean fabric.";
+          break;
+        case "manta":
+          content = "<strong>Manta:</strong> A traditional shawl worn by indigenous women, often embroidered and dyed with natural pigments.";
+          break;
+        case "tagua":
+          content = "<strong>Tagua:</strong> Also known as vegetable ivory, used to make jewelry and accessories; carved from palm seeds.";
+          break;
+      }
+      infoBox.innerHTML = `<p>${content}</p>`;
+    }
+  </script>
+</body>
 </html>
+
 
