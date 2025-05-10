@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title><center>Ecuadorian Fashion</center></title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Ecuadorian Fashion</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <center><img src="banner.png" alt="fashion" width="3000px" height="500px"></center>
+  <header>
+    <img src="banner.png" alt="Ecuadorian Fashion Banner">
+  </header>
 
-  <section id="start">
-    <h2>How Did It Start?</h2>
-    <img src="images/history.jpg" alt="Traditional Ecuadorian Textile" />
-    <p>
-      Fashion is a reflection of who we are, our culture, and identity. Ecuador is home to diverse indigenous groups, each with unique costumes and traditions. They use local materials and natural dyes to create textiles that reflect their environment and culture. Tagua, or "vegetable ivory," is a notable material. The Spanish colonial period introduced European styles, leading to a fusion of traditions in the mestizo population.
-    </p>
-  </section>
+  <main>
+    <article>
+      <section id="start">
+        <h2>How Did It Start?</h2>
+        <img src="images/history.jpg" alt="Traditional Ecuadorian Textile" class="full-image">
+        <p>
+          Fashion is a reflection of who we are, our culture, and identity. Ecuador is home to diverse indigenous groups, each with unique costumes and traditions. They use local materials and natural dyes to create textiles that reflect their environment and culture. Tagua, or "vegetable ivory," is a notable material. The Spanish colonial period introduced European styles, leading to a fusion of traditions in the mestizo population.
+        </p>
+      </section>
 
-  <section id="designers">
-    <h2>Famous Designers</h2>
-    <div class="designer">
-      <img src="images/olga.webp" alt="Olga Fisch" />
-      <p><strong>Olga Fisch:</strong> Celebrated for blending indigenous motifs with modern art and fashion.</p>
-    </div>
-    <div class="designer">
-      <img src="images/designer.jpeg" alt="Galo Sanchez" />
-      <p><strong>Galo Sánchez:</strong> Known for contemporary designs using Andean textiles.</p>
-    </div>
-    <div class="designer">
-      <img src="images/paulina.jpeg" alt="Paulina Anda" />
-      <p><strong>Paulina Anda:</strong>A leading footwear designer promoting Ecuadorian craftsmanship.</p>
-    </div>
-  </section>
+      <section id="designers">
+        <h2>Famous Designers</h2>
+        <div class="designer">
+          <img src="images/olga.webp" alt="Olga Fisch">
+          <p><strong>Olga Fisch:</strong> Celebrated for blending indigenous motifs with modern art and fashion.</p>
+        </div>
+        <div class="designer">
+          <img src="images/designer.jpeg" alt="Galo Sánchez">
+          <p><strong>Galo Sánchez:</strong> Known for contemporary designs using Andean textiles.</p>
+        </div>
+        <div class="designer">
+          <img src="images/paulina.jpeg" alt="Paulina Anda">
+          <p><strong>Paulina Anda:</strong> A leading footwear designer promoting Ecuadorian craftsmanship.</p>
+        </div>
+      </section>
 
-  <section id="traditional">
-    <h2>Traditional Clothing</h2>
-    <div class="clothing-item">
-      <img src="images/poncho.jpeg" alt="Poncho" />
-      <button onclick="showInfo('poncho')">Poncho Info</button>
-    </div>
-    <div class="clothing-item">
-      <img src="images/manta.jpg" alt="Manta" />
-      <button onclick="showInfo('manta')">Manta Info</button>
-    </div>
-    <div class="clothing-item">
-      <img src="images/tagua.jpeg" alt="Tagua" />
-      <button onclick="showInfo('tagua')">Tagua Info</button>
-    </div>
-    <div id="info-box"></div>
-  </section>
+      <section id="traditional">
+        <h2>Traditional Clothing</h2>
+        <div class="clothing-item">
+          <img src="images/poncho.jpeg" alt="Poncho">
+          <button onclick="showInfo('poncho')">Poncho Info</button>
+        </div>
+        <div class="clothing-item">
+          <img src="images/manta.jpg" alt="Manta">
+          <button onclick="showInfo('manta')">Manta Info</button>
+        </div>
+        <div class="clothing-item">
+          <img src="images/tagua.jpeg" alt="Tagua">
+          <button onclick="showInfo('tagua')">Tagua Info</button>
+        </div>
+        <div id="info-box"></div>
+      </section>
+    </article>
+  </main>
 
   <footer>
-  <center> <p>&copy; 2025 Ecuadorian Fashion | Contact us on social media</p></center>
+    <p>&copy; 2025 Ecuadorian Fashion | Contact us on social media</p>
   </footer>
 
   <script>
@@ -67,10 +74,8 @@
           content = "<strong>Tagua:</strong> Also known as vegetable ivory, used to make jewelry and accessories; carved from palm seeds.";
           break;
       }
-  
+      infoBox.innerHTML = content;
     }
   </script>
 </body>
 </html>
-
-
