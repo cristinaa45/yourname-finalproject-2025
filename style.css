@@ -37,3 +37,21 @@ nav a {
   font-weight: bold;
   font-size: 16px;
 }
+.designers-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.designer {
+  width: 300px;
+}
+
+.designer-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
