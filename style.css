@@ -56,12 +56,13 @@ nav a {
   border-radius: 10px;
 }
 
-.designer, .clothing-item {
-  margin-bottom: 40px;
+.clothing-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
 }
 
-.clothing-item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.manta-img {
+  max-width: 250px;
 }
