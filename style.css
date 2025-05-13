@@ -19,4 +19,21 @@ header h1 {
   font-size: 36px;
   font-family: 'Playfair Display', serif;
 }
+}
 
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  background-color: #ffb347;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
