@@ -66,3 +66,9 @@ nav a {
 .manta-img {
   max-width: 250px;
 }
+section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ff7e5f;
+}
